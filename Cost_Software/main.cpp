@@ -10,13 +10,20 @@
 #include <vector>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    //Espacio opara declarar las variables.
     std::vector<int> lCortes;
-    lCortes = operA::listaCortes();
+    int lTubo, eSierra;
     
-    for (int i = 0; i < 100; i++) {
-        std::cout << lCortes[i] << " mm" << std::endl;
-    }
+    //Espacio para titulo y mensajes principales.
+    std::cout << "Programa para cacular consumo de material";
+    
+    //inicianilazación de variables.
+    std::cout << "Ingrese la longitud del tubo en mm: " << std::endl;
+    std::cin >> lTubo;
+    std::cout << "Ingrese el espesor de la sierra en mm: " << std::endl;
+    std::cin >> eSierra;
+    lCortes = operA::listaCortes(lTubo,eSierra);
+    
+    operA::imprimirVector(lCortes);
     return 0;
 }

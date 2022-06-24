@@ -15,7 +15,9 @@ std::vector<int> operA::listaCortes(int longitudTubo, int corteSierra){
     int v = 0;
     std::string finalizador = "";
     
-   
+    do {
+        std::cout << "predictivo" << std::endl;
+    } while (true);
       
     return lCortes; // retornamos los valores de cortes para el main.
 }

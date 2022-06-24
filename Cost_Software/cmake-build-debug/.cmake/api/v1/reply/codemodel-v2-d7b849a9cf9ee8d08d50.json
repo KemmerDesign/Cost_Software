@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Cost_Software",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Cost_Software::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Cost_Software-Debug-278d3ce692661852345b.json",
+					"name" : "Cost_Software",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/kemmeralexandertorresgomez/Library/Mobile Documents/com~apple~CloudDocs/Programaci\u00f3n/Cost_Software/Cost_Software/Cost_Software/cmake-build-debug",
+		"source" : "/Users/kemmeralexandertorresgomez/Library/Mobile Documents/com~apple~CloudDocs/Programaci\u00f3n/Cost_Software/Cost_Software/Cost_Software"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

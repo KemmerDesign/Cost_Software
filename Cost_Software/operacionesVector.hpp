@@ -14,8 +14,9 @@
 #endif /* operacionesVector_hpp */
 
 namespace operA{
-//esta funcion crea la lista inicial de cortes para la tubería.
-std::vector<int> listaCortes(int longitudTubo, int corteSierra);
-//Imprimir vectores
-void imprimirVector(std::vector<int> &listaI);
+    bool lengthVal(int corteVal, int largoTubo, int anchoSierra);
+    //esta funcion crea la lista inicial de cortes para la tubería.
+    std::vector<int> listaCortes(int longitudTubo, int corteSierra);
+    //Imprimir vectores
+    void imprimirVector(std::vector<int> &vector);
 }

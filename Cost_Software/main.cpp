@@ -13,7 +13,6 @@ int main(int argc, const char * argv[]) {
     //Espacio opara declarar las variables.
     std::vector<int> lCortes;
     int lTubo, eSierra;
-    
     //Espacio para titulo y mensajes principales.
     std::cout << "Programa para cacular consumo de material";
     
@@ -23,7 +22,7 @@ int main(int argc, const char * argv[]) {
     std::cout << "Ingrese el espesor de la sierra en mm: " << std::endl;
     std::cin >> eSierra;
     lCortes = operA::listaCortes(lTubo,eSierra);
-    
+    std::sort(lCortes.begin(),lCortes.end());
     operA::imprimirVector(lCortes);
     return 0;
 }

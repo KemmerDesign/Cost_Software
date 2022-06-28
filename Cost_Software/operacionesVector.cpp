@@ -25,6 +25,7 @@ std::vector<int> operA::listaCortes(int longitudTubo, int corteSierra){
     std::vector<int> lCortes(100);
     int val1;
     int i = 0;
+    int a = 1;
     bool corte;
     bool val;
     do{
@@ -33,9 +34,21 @@ std::vector<int> operA::listaCortes(int longitudTubo, int corteSierra){
         corte = operA::lengthVal(val1, longitudTubo, corteSierra);
         if (val1 != 0){
             if (corte){
-                lCortes[i] = val1;
-                i++;
-                val = true;
+                std::cout << "Cuantos cortes desea ingresar: " << std::endl;
+                std::cin >> a;
+                if (a>1){
+                    for (int j = 0; j < a; ++j) {
+                        lCortes[i] = val1;
+                        i++;
+                        val = true;
+                    }
+                }
+                else{
+                    lCortes[i] = val1;
+                    i++;
+                    val = true;
+                }
+
             }else{
                 std::cout << "La longitud del corte supera el maximo permitido, ingrese un valor de nuevo" << std::endl;
                 val = true;
